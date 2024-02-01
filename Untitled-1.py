@@ -145,5 +145,68 @@ if number_of_subjects == 0:
 
 print(lst_of_students_data)
 
+###
+# no_of_students = int(input("How many students in your class ? "))
+# '''
+# while condition:
+#     do something
+#     update condition - monitor - change
+# '''
+# sample_lst = [[
+#     'Zain', 'Ahmed', [60, 70, 61] , 300
+# ],
+# [
+#     'Amjad', 'Asfar', [60, 70, 61] , 300
+# ]
+# ]
+# n = 0
+# lst_of_students_data = []
+# while n < no_of_students:
+#     name = input(f"What is your {n+1}th student name ??")
+#     fname = input(f"What is your {n+1}th student's father name ??")
+#     number_of_subjects = int(input("How many subjects attempted ??"))
+# if number_of_subjects == 0:
+#     print(temp = 0)
+#     total_marks = int(input("what are the total marks ??"))
+#     subject_marks = []
+#     # subject_marks.append(arguments)
+#     if number_of_subjects > 0:
+#         print("Please insert your marks subject wise..! ")
+#         for i in range(number_of_subjects):
+#             temp = int(input("State your marks here .. "))
+#             subject_marks.append(temp)
+#     temp_lst = [name, fname, subject_marks, total_marks]
+#     lst_of_students_data.append(temp_lst)     
+#     n = n + 1
+
+# print(lst_of_students_data)
+
+#Project Frizz Bizz# ODD/EVEN
+# num = int(input ("Enter any number: "))
+# if (num % 2) == 0: 
+#     print ("Fizz") 
+# else: 
+#     print ("Buzz")
+#Dictionary#
+# st1_dict = {"name":"zain", "fname":"Javed",}
+# st2_dict = {"fname": "Sultan","name":"Zainab"}
+# st3_dict = {"fname":"Sultan", "name":"Zainab","Class":8}
+
+# for i in st3_dict:
+#     print(i, st3_dict{i})
+###Dictionary###
+# student_strenght = int(input("how many student ?"))
+# std_1st = []
+# for _ in range(student_strenght) :
+#     std_data = dict()
+#     name = input("what is your name ?")
+#     fname = input("what is your fname ?")
+#     age = int(input("what is your age ?"))
+#     std_data['name'] = name
+#     std_data['fname'] = fname
+#     std_data['age'] = age
+#     std_1st.append(std_data)
+#     print(std_1st)
+
 
 
