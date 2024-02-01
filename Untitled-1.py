@@ -207,6 +207,72 @@ print(lst_of_students_data)
 #     std_data['age'] = age
 #     std_1st.append(std_data)
 #     print(std_1st)
+###FILING/file handling###
+# # """
+# # a = dict()
+# # {'key' : value}
 
+# # """
+# # salary = 'salary'
+# # student1 = {
+# #     "name": "Ali", 'age' : 18, salary: 18000, 'school': None
+# # }
+
+# # student2 = {
+# #     'age' : 18, "name": "Ali", salary: 18000, 'school': None
+# # }
+import json
+# list 
+# dictionaries -> string " " | Should be in double quotation
+# Strings
+student_strength = int(input("How many students ? ")) # 3
+std_lst = []
+for _ in range(student_strength): # 3
+    std_data = dict() # { }
+    name = input("Enter name ?") 
+    fname = input("Enter fname ?") 
+    age = input("Enter age ?")
+    std_data['name'] = name 
+    std_data['fname'] = fname 
+    std_data['age'] = age 
+    std_lst.append(std_data)
+# a+ read and append
+# json.dumps -> json readable bnadeta ha data ko
+str_data = json.dumps(std_lst)
+file = open('student_data.json', 'w+')
+json_data = json.dumps(std_lst) 
+file.write(json_data)
+
+file = open('student_data.txt', 'w+')
+file.write(str(std_lst))
+
+file_txt = open('student_data.txt', 'r')
+file_json = open('student_data.json', 'r')
+
+
+a = file_txt.read()
+b = file_json.read()
+# print(type(a), type(b))
+formatted_data = json.loads(b)
+print(type(formatted_data))
+
+print(len(formatted_data))
+print(formatted_data[1]['name'])
+# # print(file_txt.read(), "< Text File")
+a = file_txt.read()
+# print(file_json.read(), "< JSON File")
+b = file_json.read()
+
+# json.loads file se code readable data read hota ha
+# data_a = json.loads(a)
+data_b = json.loads(b)
+print(data_b)
+print(data_b[0]['name'])
+print(data_b[0]['fname'])
+print(data_b[0]['age'])
+# print(type(a))
+# print(type(b))
+# print(json.loads(b.decode("utf-8")))
+# print(json.loads(a))
 
 
